@@ -14,19 +14,19 @@ module.exports = function (environment) {
         },
 
         APP: {
-            WebsiteName : 'phoenixmax.org',
+            WebsiteName : 'miningcrypto.live',
             Currency : 'USD',
 
-             EGEM: {
+             ETC: {
                      // API host and port
-                    ApiUrl: '//egem.phoenixmax.org/',
+                    ApiUrl: '//etc.miningcrypto.live/',
 
                     // HTTP mining endpoint
-                    HttpHost: 'http://egem.phoenixmax.org',
+                    HttpHost: 'http://etc.miningcrypto.live',
                     HttpPort: 8888,
 
                     // Stratum mining endpoint
-                    StratumHost: 'egem.phoenixmax.org',
+                    StratumHost: 'etc.miningcrypto.live',
                     StratumPort: 8008,
 
                 //    StratumHost1: 'egem.phoenixmax.org',
@@ -36,24 +36,24 @@ module.exports = function (environment) {
                 //    StratumPort2: 40025,
 
                     // Fee and payout details
-                    PoolFee: '0.5%',
+                    PoolFee: '1.0%',
                     PayoutThreshold: '0.5',
-                    ShareDifficulty: '4G',
+                    ShareDifficulty: '3G',
 
                     //Current and Localization
                     Currency: 'USD',
-                    CoinName: 'EtherGem',
-                    CoinShortName: 'EGEM',
-                    PaymentText: 'every 3 hours',
-                    SupportMail: 'support@phoenixmax.org',
+                    CoinName: 'Ethereum Classic',
+                    CoinShortName: 'ETC',
+                    PaymentText: 'every 2 hours',
+                    SupportMail: 'celldr69@gmail.com',
                   //  SupportHelpdesk: 'http://helpdesk.daggerpool.com',
-                    WebsiteName: 'egem.phoenixmax.org',
+                    WebsiteName: 'miningcrypto.live',
 
                     //Coin Bases Settings
-                 //   ChainAddress : 'https://ubiqscan.io/en/address/',
-                  //  TransactionAddress : 'https://ubiqscan.io/en/tx/',
-                 //   UncleAddress : 'https://ubiqscan.io/en/uncle/',
-                 //   BlockAddress : 'https://ubiqscan.io/en/block/',
+                    ChainAddress : 'https://blockscout.com/etc/mainnet/',
+                    TransactionAddress : 'https://blockscout.com/etc/mainnet/txs/',
+                    UncleAddress : 'https://blockscout.com/etc/mainnet/uncles/',
+                    BlockAddress : 'https://blockscout.com/etc/mainnet/blocks/',
 
                     //Twitter Parameter
                  //   TwitterURL: 'https://twitter.com/',
@@ -61,20 +61,20 @@ module.exports = function (environment) {
 
 
                     // For network hashrate (change for your favourite fork)
-                    BlockTime: 14.4
+                    BlockTime: 13.2
              },
           
-        DBIX: {
+        ERGO: {
             // API host and port
-            ApiUrl: '//dbix.phoenixmax.org/',
+            ApiUrl: '//miningcrypto.live/',
 
             // HTTP mining endpoint
-            HttpHost: 'http://dbix.phoenixmax.org',
+            HttpHost: 'http://miningcrypto.live',
             HttpPort: 8888,
 
             // Stratum mining endpoint
-            StratumHost: 'dbix.phoenixmax.org',
-            StratumPort: 8008,
+            StratumHost: 'miningcrypto.live',
+            StratumPort: 3194,
 
           //  StratumHost1: 'dbix-uk01.daggerpool.com',
           //  StratumPort1: 40017,
@@ -85,22 +85,22 @@ module.exports = function (environment) {
             // Fee and payout details
             PoolFee: '1.0%',
             PayoutThreshold: '0.5',
-            ShareDifficulty: '4000000000',
+            ShareDifficulty: '1000000000',
 
             //Current and Localization
             Currency: 'USD',
-            CoinName: 'Dubai Coin',
-            CoinShortName: 'DBIX',
-            PaymentText: 'every 3 hours',
-            SupportMail: 'support@phoenixmax.org',
+            CoinName: 'Ergo',
+            CoinShortName: 'ERGO',
+            PaymentText: 'every 2 hours',
+            SupportMail: 'celldr69@gmail.com',
            // SupportHelpdesk: 'http://helpdesk.daggerpool.com',
-            WebsiteName: 'dbix.phoenixmax.org',
+            WebsiteName: 'miningcrypto.live',
 
             //Coin Bases Settings
-            ChainAddress : 'http://dbixscan.io/addr/',
-	    TransactionAddress : 'http://dbixscan.io/tx/',
-            UncleAddress : 'http://dbixscan.io/uncle/',
-            BlockAddress : 'http://dbixscan.io/block/',
+            ChainAddress : 'https://explorer.ergoplatform.com/en/address/',
+	    TransactionAddress : 'https://explorer.ergoplatform.com/en/transactions/',
+           // UncleAddress : 'http://dbixscan.io/uncle/',
+            BlockAddress : 'https://explorer.ergoplatform.com/en/blocks/',
 
             //Twitter Parameter
            // TwitterURL: 'https://twitter.com/',
@@ -113,51 +113,7 @@ module.exports = function (environment) {
 
         },
      
-        ETC: {
-            // API host and port
-            ApiUrl: '//etcpool.phoenixmax.org/',
-
-            // HTTP mining endpoint
-            HttpHost: 'http://etcpool.phoenixmax.org/',
-            HttpPort: 8888,
-
-            // Stratum mining endpoint
-            StratumHost: 'etcpool.phoenixmax.org/',
-            StratumPort: 8008,
-
-            StratumHost1: 'etcpool.phoenixmax.org/',
-            StratumPort1: 11010,
-
-            NicehashHost: 'etcpool.phoenixmax.org/',
-            NicehashPost: 11016,
-
-            // Fee and payout details
-            PoolFee: '1.0%',
-            PayoutThreshold: '0.5',
-            ShareDifficulty: '4000000000',
-
-            //Current and Localization
-            Currency: 'USD',
-            CoinName: 'Ethereum Classic',
-            CoinShortName: 'ETC',
-            PaymentText: 'every 3 hours',
-            SupportMail: 'support@phoenixmax.org',
-          //  SupportHelpdesk: 'http://helpdesk.daggerpool.com',
-          //  WebsiteName: 'etc.daggerpool.com',
-
-            //Coin Bases Settings
-            ChainAddress : 'https://blockscout.com/etc/mainnet/address/',
-	    TransactionAddress : 'https://blockscout.com/etc/mainnet/txs/',
-            UncleAddress : 'https://blockscout.com/etc/mainnet/uncles/',
-            BlockAddress : 'https://blockscout.com/etc/mainnet/blocks/',
-
-            //Twitter Parameter
-         //   TwitterURL: 'https://twitter.com/',
-         //   TwitterHash: 'daggerpool_com',
-
-
-            // For network hashrate (change for your favourite fork)
-            BlockTime: 15
+        
 
         }
     };
