@@ -2,7 +2,7 @@
 
 module.exports = function (environment) {
     var ENV = {
-        modulePrefix: 'generalapi',
+        modulePrefix: 'open-etc-pool',
         environment: environment,
         rootURL: '/',
         locationType: 'hash',
@@ -13,11 +13,7 @@ module.exports = function (environment) {
             }
         },
 
-        APP: {
-            WebsiteName : 'miningcrypto.live',
-            Currency : 'USD',
-
-             ETC: {
+             APP: {
                      // API host and port
                     ApiUrl: '//etc.miningcrypto.live/',
 
@@ -28,12 +24,9 @@ module.exports = function (environment) {
                     // Stratum mining endpoint
                     StratumHost: 'etc.miningcrypto.live',
                     StratumPort: 8008,
-
-                //    StratumHost1: 'egem.phoenixmax.org',
-                //    StratumPort1: 40015,
-
-                //    StratumHost2: 'ubiq-nh.daggerpool.com',
-                //    StratumPort2: 40025,
+               
+                    // The ETC network used (classic, mordor)
+                    Network: 'classic',
 
                     // Fee and payout details
                     PoolFee: '1.0%',
@@ -62,60 +55,7 @@ module.exports = function (environment) {
 
                     // For network hashrate (change for your favourite fork)
                     BlockTime: 13.2
-             },
-          
-        ERGO: {
-            // API host and port
-            ApiUrl: '//miningcrypto.live/',
-
-            // HTTP mining endpoint
-            HttpHost: 'http://miningcrypto.live',
-            HttpPort: 8888,
-
-            // Stratum mining endpoint
-            StratumHost: 'miningcrypto.live',
-            StratumPort: 3194,
-
-          //  StratumHost1: 'dbix-uk01.daggerpool.com',
-          //  StratumPort1: 40017,
-
-          //  NicehashHost: 'dbix-us01.daggerpool.com',
-         //   NicehashPost: 40027,
-
-            // Fee and payout details
-            PoolFee: '1.0%',
-            PayoutThreshold: '0.5',
-            ShareDifficulty: '1000000000',
-
-            //Current and Localization
-            Currency: 'USD',
-            CoinName: 'Ergo',
-            CoinShortName: 'ERGO',
-            PaymentText: 'every 2 hours',
-            SupportMail: 'celldr69@gmail.com',
-           // SupportHelpdesk: 'http://helpdesk.daggerpool.com',
-            WebsiteName: 'miningcrypto.live',
-
-            //Coin Bases Settings
-            ChainAddress : 'https://explorer.ergoplatform.com/en/address/',
-	    TransactionAddress : 'https://explorer.ergoplatform.com/en/transactions/',
-           // UncleAddress : 'http://dbixscan.io/uncle/',
-            BlockAddress : 'https://explorer.ergoplatform.com/en/blocks/',
-
-            //Twitter Parameter
-           // TwitterURL: 'https://twitter.com/',
-           // TwitterHash: 'daggerpool_com',
-
-
-            // For network hashrate (change for your favourite fork)
-            BlockTime: 90
-
-
-        },
-     
-        
-
-        }
+             }
     };
 
     if (environment === 'development') {
